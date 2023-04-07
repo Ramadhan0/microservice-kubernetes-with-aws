@@ -41,6 +41,19 @@ source <your_venv>/bin/activate
 ### Kubernetes Steps
 
 - Setup and Configure Docker locally
+
+  1. create docker account
+  2. install docker locally (https://www.docker.com/get-started)
+
 - Setup and Configure Kubernetes locally
+
+  1. install Minikube. Follow instruction (https://minikube.sigs.k8s.io/docs/start/)
+  2. install Kubernetes using Minikube (https://minikube.sigs.k8s.io/docs/start/)
+  3. configure Kubernetes by running `minikube start`
+
 - Create Flask app in Container
+
+  1. run the shell script to build and the project in a container. `run_docker.sh`
+
 - Run via kubectl
+  1. run the shell script. `run_kubernetes.sh`

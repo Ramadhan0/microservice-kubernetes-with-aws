@@ -20,6 +20,15 @@ test:
 	#python -m pytest -vv --cov=myrepolib tests/*.py
 	#python -m pytest --nbval notebook.ipynb
 
+add_hadolint:
+	python3 -m venv venv
+	. venv/bin/activate
+	make install
+	# Install hadolint
+	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
+		chmod +x /bin/hadolint
+	make lint
+
 lint:
 	# See local hadolint install instructions:   https://github.com/hadolint/hadolint
 	# This is linter for Dockerfiles
