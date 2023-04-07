@@ -1,5 +1,16 @@
 <paste log output from Kubernetes-mediated prediction, here>
 
+# make_prediction.sh logs
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
+# Kubernetes logs
+
 See 'kubectl run --help' for usage.
 NAME          READY   STATUS    RESTARTS   AGE
 development   1/1     Running   0          5m15s
